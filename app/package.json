@@ -1,0 +1,18 @@
+{
+  "name": "rosefiles",
+  "version": "1.0.0",
+  "description": "Application that works as UI for RoseFiles",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "",
+  "keywords": [
+    "RoseFiles"
+  ],
+  "author": "Style",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^19.0.9"
+  }
+}

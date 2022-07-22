@@ -1,0 +1,29 @@
+@media (prefers-color-scheme: dark) {
+  body { background: #333; color: white; }
+}
+
+@media (prefers-color-scheme: light) {
+  body { background: #ddd; color: black; }
+}
+
+.viewer {
+  border: 1px solid black;
+}
+
+.viewer {
+  height: 97vh;
+  min-width: 49vw;
+  background: gray;
+  overflow: auto;
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.files {
+    cursor: pointer;
+    color: blue;
+}

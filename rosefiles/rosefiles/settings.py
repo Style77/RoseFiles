@@ -27,6 +27,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+with open("../host_config", "r") as f:
+    data = f.readlines()
+    HOST_PATH = data[0].replace("\n", "")
+    HOST_ADDRESS = data[1]
+    HOST_PORT = data[2]
+    HOST_IP = f"{HOST_ADDRESS}:{HOST_PORT}"
 
 # Application definition
 
@@ -118,8 +124,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-MEDIA_URL = '/files/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'files')
+MEDIA_URL = HOST_PATH+'/files/'
+MEDIA_ROOT = HOST_PATH
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
